@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* ===================== */
+/* PAGE 1 */
+/* ===================== */
+
+.page1 {
+    background: linear-gradient(135deg, #ffe6eb, #fff5f7);
+    color: #b3003c;
+    height: 100vh;
+    position: relative;
+}
+
+/* Repeated LOVE background */
+
+.love-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.love-background span {
+    position: absolute;
+    font-family: 'Great Vibes', cursive;
+    color: rgba(255, 0, 76, 0.07);
+    font-size: 40px;
+    user-select: none;
+}
+
+/* Center Content */
+
+.center-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+/* Heart Button */
+
+.heart-btn {
+    background: #ff4d88;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    padding: 12px 28px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 25px;
+    box-shadow: 0 8px 20px rgba(255, 77, 136, 0.3);
+    transition: 0.3s;
+}
+
+.heart-btn:hover {
+    transform: scale(1.1);
+    background: #ff1a66;
+}
+
+.open-text {
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+/* ===================== */
+/* PAGE 2 */
+/* ===================== */
+
+.page2 {
+    background: linear-gradient(135deg, #fff0f5, #ffe6f0);
+    height: 100vh;
+    position: relative;
+    color: #b30059;
+}
+
+/* Repeated Birthday Text */
+
+.birthday-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    color: rgba(255, 0, 102, 0.05);
+    line-height: 60px;
+    word-spacing: 30px;
+    font-family: 'Great Vibes', cursive;
+    padding: 20px;
+}
+
+/* Editable Message */
+
+.editable-message {
+    min-height: 150px;
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    background: white;
+    outline: none;
+    font-size: 1.1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Love Button */
+
+.love-btn {
+    margin-top: 30px;
+    background: linear-gradient(45deg, #ff66a3, #ff3385);
+    border: none;
+    padding: 14px 28px;
+    border-radius: 50px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(255, 51, 133, 0.3);
+    transition: 0.3s;
+}
+
+.love-btn:hover {
+    transform: scale(1.1);
+}
+
+/* ===================== */
+/* POPUP */
+/* ===================== */
+
+.popup {
+    display: none;   /* MUST stay none */
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+
+
+.popup-content {
+    background: white;
+    width: 85%;
+    max-width: 420px;
+    padding: 35px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    color: #cc0066;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+
+
+
+/* Back Button */
+
+.back-btn {
+    margin-bottom: 20px;
+    background: transparent;
+    border: 2px solid #ff66a3;
+    padding: 8px 18px;
+    border-radius: 30px;
+    color: #ff3385;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #ff66a3;
+    color: white;
+}
+
+/* Close popup when clicked outside */
+.popup-content button {
+    margin-top: 15px;
+}

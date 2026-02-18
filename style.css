@@ -31,7 +31,7 @@ body {
 .love-background span {
     position: absolute;
     font-family: 'Great Vibes', cursive;
-    color: rgba(255, 0, 76, 0.07);
+    color: rgba(255, 0, 76, 0.2);
     font-size: 40px;
     user-select: none;
 }

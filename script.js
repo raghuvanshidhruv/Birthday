@@ -48,7 +48,7 @@ function goToPage1() {
     if (audio) {
         sessionStorage.setItem('audioTime', audio.currentTime);
     }
-    window.location.href = "./page1.html";
+    window.location.href = "./index.html";
 }
 
 function showFinalMessage() {
